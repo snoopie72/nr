@@ -10,7 +10,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3FE7D6
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NrDataLib", "NrDataLib\NrDataLib.csproj", "{60A1C041-FD60-408E-BDC2-7776CFF3266E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NRResultsWeb", "NRResultsWeb\NRResultsWeb.csproj", "{2E5EE0EE-2855-43DB-897D-3AFF494DD710}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60A1C041-FD60-408E-BDC2-7776CFF3266E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A1C041-FD60-408E-BDC2-7776CFF3266E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A1C041-FD60-408E-BDC2-7776CFF3266E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A1C041-FD60-408E-BDC2-7776CFF3266E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5EE0EE-2855-43DB-897D-3AFF494DD710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5EE0EE-2855-43DB-897D-3AFF494DD710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5EE0EE-2855-43DB-897D-3AFF494DD710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5EE0EE-2855-43DB-897D-3AFF494DD710}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
