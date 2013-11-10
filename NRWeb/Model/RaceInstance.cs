@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.Security.AccessControl;
 
-namespace NrDataLib.Model
+namespace NRWeb.Model
 {
     public class RaceInstance
     {
+        [Key]
+        public int RaceInstanceId { get; set; }
         public string Navn { get; set; }
         public string Beskrivelse { get; set; }
         public DateTime Dato { get; set; }

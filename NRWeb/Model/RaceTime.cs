@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
-namespace NrDataLib.Model
+namespace NRWeb.Model
 {
     public class RaceTime
     {
+        [Key]
+        public int RaceTimeId { get; set; }
         public virtual RaceInstance RaceInstance { get; set; }
         public virtual User User { get; set; }
-        public DateTime Time { get; set; }
+        public TimeSpan Time { get; set; }
         public byte[] Bilde { get; set; }
         public string Kommentar { get; set; }
     }

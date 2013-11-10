@@ -1,4 +1,4 @@
-using NRWeb.Context;
+using NRWeb.Model;
 
 namespace NRWeb.Migrations
 {
@@ -7,14 +7,14 @@ namespace NRWeb.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<NRDataContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<NRWeb.Context.NRDataContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(NRDataContext context)
+        protected override void Seed(NRWeb.Context.NRDataContext context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -28,6 +28,8 @@ namespace NRWeb.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            
         }
     }
 }

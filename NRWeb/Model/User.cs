@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
-namespace NrDataLib.Model
+namespace NRWeb.Model
 {
     public class User
     {
+        [Key]
         public string Name { get; set; }
         public string Adresse { get; set; }
         public DateTime Fodselsdato { get; set; }

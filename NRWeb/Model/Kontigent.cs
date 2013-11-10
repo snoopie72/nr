@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.AccessControl;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
-namespace NrDataLib.Model
+namespace NRWeb.Model
 {
     public class Kontigent
     {
+        [Key]
+        public int KontigentId { get; set; }
         public int Year { get; set; }
 
         public virtual User Medlem { get; set; }

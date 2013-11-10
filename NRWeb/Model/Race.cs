@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.ComponentModel.DataAnnotations;
 using System.Security.AccessControl;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace NrDataLib.Model
+namespace NRWeb.Model
 {
     public class Race
     {
+        [Key]
+        public int RaceId { get; set; }
         public String Navn { get; set; }
         public String Beskrivelse { get; set; }
         public int Type { get; set; }
